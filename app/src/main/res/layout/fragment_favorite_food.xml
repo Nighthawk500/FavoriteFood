@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="80dp">
+
+    <!-- List of favorite food from each restaurant -->
+    <TextView
+        android:id="@+id/tv_food_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorite order at Culver's:\nDouble deluxe basket with large diet Coke and fry"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_food_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorite order at Costco:\nChicken bake and diet Pepsi"
+        app:layout_constraintTop_toBottomOf="@id/tv_food_1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tv_food_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorite order at In N Out:\n 2x Double Doubles everything on it with a large diet Coke"
+        app:layout_constraintTop_toBottomOf="@id/tv_food_2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tv_food_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorite order at Braum's:\n 2x 6 pc chicken tenders with extra Braum's sauce"
+        app:layout_constraintTop_toBottomOf="@id/tv_food_3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

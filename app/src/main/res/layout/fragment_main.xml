@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="80dp">
+
+    <!-- Restaurant buttons -->
+    <Button
+        android:id="@+id/btn_culvers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Culver's"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_costco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Costco"
+        app:layout_constraintTop_toBottomOf="@id/btn_culvers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btn_innout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="In N Out"
+        app:layout_constraintTop_toBottomOf="@id/btn_costco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btn_braums"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Braum's"
+        app:layout_constraintTop_toBottomOf="@id/btn_innout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button to open FavoriteFoodFragment -->
+    <Button
+        android:id="@+id/btn_favorite_food"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="List of Favorite Food"
+        app:layout_constraintTop_toBottomOf="@id/btn_braums"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#CC5500" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
